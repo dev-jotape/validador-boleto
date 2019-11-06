@@ -1,5 +1,4 @@
-const moment = require('moment');
-let multiplicador, multiplicador2;
+let multiplicador;
 
 const validarConvenio = (linha) => {
     let campo1 = linha.substring(0, 11),
@@ -37,12 +36,9 @@ const validarConvenio = (linha) => {
     
     // valor boleto
     let valorBoleto = Number(`${valor.substring(0, 9)}.${valor.substring(9)}`).toFixed(2);
-    console.log('valor => ', valor)
-    console.log('valor2 => ', valorBoleto)
     return { 
         valido: true,
         valor: valorBoleto,
-        // vencimento,
         barcode
     }
 };
