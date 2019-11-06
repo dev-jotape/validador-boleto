@@ -2,7 +2,7 @@
 
 Passos para utilização:
 
-- `https://github.com/joaopedro1206/validador-boleto.git`
+- `git clone https://github.com/joaopedro1206/validador-boleto.git`
 - `cd validador-boleto`
 - `npm install`
 - `npm start`
